@@ -1,0 +1,24 @@
+{
+  "name": "assignment-1b",
+  "version": "1.0.0",
+  "description": "Dapp that uses blockchain smart contracts",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.5.6"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.7.3"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "ganache": "ganache-cli -h 127.0.0.1 --port 8545 --gasLimit 6500000000 --gasPrice 6500000 --mnemonic \"sample string\""
+  },
+  
+  "author": "Aman Singh Bhandari B00910008",
+  "license": "ISC"
+}
