@@ -3,40 +3,37 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Document008 {
-    string details = ""; //details of the agreement
+    string buyerDigiSign008 = ""; //Digital Signature of buyer
 
-    bytes32 hashCode; //hashcode of the details of the agreement
+    string sellerDigiSign008 = ""; //Digital Signature of seller
 
-    string status = ""; //accepted or rejected
-
-    function submitAgreement008(string memory _details) public {
-        details = _details; //set the details of the agreement
-        hashCode = keccak256(abi.encodePacked(_details)); //hashing using keccak256
+    function setBuyerDigiSign008(string memory _digiSign) public {
+        buyerDigiSign008 = _digiSign; //set buyers digital signature
     }
 
-    function retrieveAgreement008()
+    function setSellerDigiSign008(string memory _digiSign) public {
+        sellerDigiSign008 = _digiSign; //set seller digital signature
+    }
+
+    function getBuyerDigiSign008()
         public
         view
         returns (
-            //returns the details and its hash
-            bytes32,
+            //returns the buyer digi sign
             string memory
         )
     {
-        return (hashCode, details);
+        return (buyerDigiSign008);
     }
 
-    function approveAgreement008()
+    function getSellerDigiSign008()
         public
-    //changes the status of document to approved
+        view
+        returns (
+            //returns the seller digi sign
+            string memory
+        )
     {
-        status = "approved";
-    }
-
-    function cancelAgreement008()
-        public
-    //changes the status of document to cancelled
-    {
-        status = "cancelled";
+        return (sellerDigiSign008);
     }
 }
