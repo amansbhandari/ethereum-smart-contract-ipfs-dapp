@@ -16,8 +16,11 @@ Since now the digital signature sits on blockchain through smart contracts and d
 
 ### Smart contract methods
 • setBuyerDigiSign008 – Stores the digital signature of the buyer. The digital signature is constructed in Dapp and set through this method of smart contract.
+
 • setSellerDigiSign008 – Stores the digital signature of the seller. The digital signature is constructed in Dapp and set through this method of smart contract.
+
 • getBuyerDigiSign008 – Gets the digital signature of the buyer. The digital signature is constructed in Dapp and get through this method of smart contract.
+
 • getSellerDigiSign008 – Gets the digital signature of the seller. The digital signature is constructed in Dapp and get through this method of smart contract.
  
 <img width="411" alt="image" src="https://user-images.githubusercontent.com/25216571/181626053-d3b3bcbb-3027-4dad-8495-270dc44d932d.png">  
